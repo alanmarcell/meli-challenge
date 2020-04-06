@@ -1,27 +1,26 @@
-import axios from 'axios';
+import { itemsDto, itemDto } from './items.dto';
+import { getItemsService, getItemService, getItemDescriptionService } from './items.datasource';
 
 const errorHandler = (res, error) => res.status(500).json({ message: error.message });
 
-
-const instance = axios.create({
-  baseURL: 'https://api.mercadolibre.com',
-  // headers: { 'Content-Type': 'application/json' },
-});
-
-const getItemsService = query => {
-
-  return instance.get(`/sites/MLA/search?q=${query}`)
-}
-
 const getItems = async (req, res, _next) => {
   try {
-    console.log(req.query.q)
-    const response = await getItemsService(req.query.q)
-    // console.log(response)
-    res.json(response.data);
+    const response = await getItemsService(req.query.q);
+    res.json(itemsDto(response.data));
   } catch (error) {
     errorHandler(res, error);
   }
-}
+};
 
-export { getItems }
+const getItem = async (req, res, _next) => {
+  try {
+    const { id } = req.params;
+    const itemResponse = await getItemService(id);
+    const itemDescriptionResponse = await getItemDescriptionService(id);
+    res.json(itemDto(itemResponse.data, itemDescriptionResponse.data));
+  } catch (error) {
+    errorHandler(res, error);
+  }
+};
+
+export { getItems, getItem };

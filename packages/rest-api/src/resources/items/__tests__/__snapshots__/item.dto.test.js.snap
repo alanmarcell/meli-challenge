@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item DTO should have correct format 1`] = `
+Object {
+  "author": Object {
+    "lastname": "Marcell",
+    "name": "Alan",
+  },
+  "item": Object {
+    "condition": "new",
+    "description": "AMSTERDAM IMPORTADOR DIRECTO
+
+MERCADO LIDER PLATINUM
+Contamos con el 100% de calificaciones positivas y mas de 8 años de experiencia en ventas online! Tu compra es garantizada! 
+
+PRODUCTO: CONSOLA DE VIDEO JUEGO FAMILYALIEN 1
+
+CARACTERISTICAS: 
+
+-FamilyGameAlien Pro 1 + 1juego de 8 bits +2 Joys+pistola
+-Excelente consola family game con forma de playstation
+-Transformador a 220 v
+- 2 joysticks
+-Juegos de regalo (incorporado)
+-Pistola (no es compatible con lcd)
+-Cables de conexión (audio y video)
+
+Realiza tu compra de la formas mas segura, mediante MERCADOPAGO. Consulta promociones disponibles. 
+
+FORMAS DE ENVIO:
+- MercadoEnvios. mediante Correo Argentino. Podes calcular el costo de envío debajo del precio de la publicación. 
+- Micro a terminal: A todo el país con pago en destino.
+- Micro con entrega a domicilio (solo CABA)
+- Retiro personalmente: Con DNI en Mar del Plata
+
+¿QUIÉNES SOMOS?
+AMSTERDAM IMPORTADOR DIRECTO es una empresa argentina con más de 8 años de trayectoria y experiencia en el mercado, brindando asesoramiento personalizado al momento de la compra. Trabajamos todos los días para lograr que tengas la mejor experiencia de compra. Siempre recordando lo esencial, el conocimiento de lo que vendemos, y el respeto, honrando la confianza que depositasen nosotros con cada compra.
+
+¿PORQUÉ COMPRAR CON NOSOTROS?
+Siempre buscamos el modo de estar cerca de nuestros clientes.Nuestra atención es personalizada, con vendedores especializados que te asesoraran en cada producto. Contamos con local, por lo que además de adquirir un producto nuevo, sellado y 100% original, podés optar por retirarlo personalmente.",
+    "free_shipping": false,
+    "id": "MLA653546463",
+    "picture": "http://mla-s2-p.mlstatic.com/717025-MLA25351455547_022017-I.jpg",
+    "price": Object {
+      "amount": 1995,
+      "currency": "ARS",
+      "decimals": 85,
+    },
+    "sold_quantity": 3,
+    "title": "Consola De Video Juego Family Alien 1",
+  },
+}
+`;

@@ -1,4 +1,4 @@
-export const rawItemsMock = {
+export default {
   site_id: 'MLA',
   query: 'videogame',
   paging: {

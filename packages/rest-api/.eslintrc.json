@@ -16,6 +16,14 @@
         "sourceType": "module"
     },
     "rules": {
+        "arrow-parens": [
+            "off",
+            "never"
+        ],
+        "arrow-body-style": [
+            "off",
+            "never"
+        ],
         "no-unused-vars": [
             2,
             {

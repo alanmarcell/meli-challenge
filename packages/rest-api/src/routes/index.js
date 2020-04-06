@@ -4,7 +4,7 @@ import itemsRoutes from './items.routes';
 const app = express();
 
 const routes = () => {
-  app.use('/', itemsRoutes());
+  app.use('/', itemsRoutes);
 
   return app;
 };
