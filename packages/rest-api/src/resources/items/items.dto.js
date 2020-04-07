@@ -6,7 +6,7 @@ const author = {
 };
 
 const getCategories = (itemsRaw) => R.map((value) => value.name,
-  R.prop('values',
+  R.propOr([], 'values',
     R.find((availableFilter) => availableFilter.id === 'category',
       R.prop('available_filters', itemsRaw))));
 
