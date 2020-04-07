@@ -1,0 +1,20 @@
+{
+  "short_name": "MELI Challenge",
+  "name": "MELI Challenge",
+  "icons": [
+    {
+      "src": "Logo_ML.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "Logo_ML@2x.png",
+      "type": "image/png",
+      "sizes": "106x72"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FFE600",
+  "background_color": "#EEEEEE"
+}
